@@ -37,7 +37,7 @@
         // User info
         var user = get('dme_user_logged') || {};
         var nick = user.nickname || username;
-        var av = 'https://www.habbo.com.br/habbo-imaging/avatarimage?user=' + nick + '&direction=2&head_direction=2&gesture=sml&size=m';
+        var av = `https://www.habbo.com.br/habbo-imaging/avatarimage?user=${encodeURIComponent(nick)}&headonly=1&size=m`;
         document.getElementById('navUserName').textContent = nick;
         document.getElementById('navUserImage').src = av;
         document.getElementById('dropdownUserImage').src = av;
