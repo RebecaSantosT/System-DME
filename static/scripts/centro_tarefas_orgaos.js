@@ -338,14 +338,7 @@ if (orgao) {
         const statSel = document.getElementById('statSelecionado');
 
         if (statSel) {
-        const icone = selected && (selected.icone || selected.icon);
-
-        // Se for uma URL (começa com http ou termina em .png/.gif/.jpg), mostra apenas "—"
-        if (icone && !/^https?:\/\//.test(icone) && !/\.(png|jpg|jpeg|gif)$/i.test(icone)) {
-            statSel.textContent = icone;
-        } else {
-            statSel.textContent = '—';
-        }
+        statSel.textContent = '—'; // Fixa o traço, sem imagem nem ícone
         }
 
         await carregarDados();
