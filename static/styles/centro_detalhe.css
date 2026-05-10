@@ -193,6 +193,8 @@
     align-items: center;
     justify-content: center;
     font-size: 2rem;
+    overflow: hidden;
+    padding: 6px;
 }
 
 .centro-header-info {
@@ -1159,7 +1161,7 @@ body.light-mode .membros-grupo-header {
         width: 52px;
         height: 52px;
         min-width: 52px;
-        font-size: 1.5rem;
+        padding: 4px;
     }
 
     .centro-header-title {

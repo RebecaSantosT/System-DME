@@ -11,29 +11,29 @@
 
     // ── Órgãos (mesma lista do centro_tarefas_orgaos.js) ─
     const ORGAOS = [
-        { id: 'centro-instrucao', title: 'Centro de Instrução', icon: '🛡️', desc: 'Responsável pela instrução e capacitação dos militares do DME.' },
-        { id: 'centro-treinamento', title: 'Centro de Treinamento', icon: '🛡️', desc: 'Coordena os treinamentos táticos e operacionais.' },
-        { id: 'centro-supervisao', title: 'Centro de Supervisão', icon: '🛡️', desc: 'Supervisiona as atividades e o cumprimento das normas.' },
-        { id: 'centro-patrulha', title: 'Centro de Patrulha', icon: '🛡️', desc: 'Gerencia operações de patrulha e segurança interna.' },
-        { id: 'academia-agulhas-negras', title: 'Academia Militar das Agulhas Negras', icon: '🦅', desc: 'Elite da formação militar do DME.' },
-        { id: 'auditoria-fiscal', title: 'Auditoria Fiscal', icon: '⚖️', desc: 'Controle e auditoria das atividades fiscais do DME.' },
-        { id: 'academia-publicitaria', title: 'Academia Publicitária Militar', icon: '📜', desc: 'Gestão de comunicação e publicidade institucional.' },
+        { id: 'centro-instrucao', title: 'Centro de Instrução', icon: 'https://dme.systemhb.net/template/uploads/images/funcao/logo/914016940fb6c52e135e9f446ba8aaf8.gif', desc: 'Responsável pela instrução e capacitação dos militares do DME.' },
+        { id: 'centro-treinamento', title: 'Centro de Treinamento', icon: 'https://dme.systemhb.net/template/uploads/images/funcao/logo/bbef8297aa5a9abcd7953cae6a9cfdd7.gif', desc: 'Coordena os treinamentos táticos e operacionais.' },
+        { id: 'centro-supervisao', title: 'Centro de Supervisão', icon: 'https://dme.systemhb.net/template/uploads/images/funcao/logo/2f1401dec91ad95dfe3001d54ffe569d.gif', desc: 'Supervisiona as atividades e o cumprimento das normas.' },
+        { id: 'centro-patrulha', title: 'Centro de Patrulha', icon: 'https://dme.systemhb.net/template/uploads/images/funcao/logo/0f0070fc35e6287165dbca41c7f346c6.gif', desc: 'Gerencia operações de patrulha e segurança interna.' },
+        { id: 'academia-agulhas-negras', title: 'Academia Militar das Agulhas Negras', icon: 'https://dme.systemhb.net/template/uploads/images/funcao/logo/77bc72a49309801dfcf55518220ae70c.gif', desc: 'Elite da formação militar do DME.' },
+        { id: 'auditoria-fiscal', title: 'Auditoria Fiscal', icon: 'https://dme.systemhb.net/template/uploads/images/funcao/logo/31e84ea0b11c5ed7b63ac1e6166bee90.gif', desc: 'Controle e auditoria das atividades fiscais do DME.' },
+        { id: 'academia-publicitaria', title: 'Academia Publicitária Militar', icon: 'https://dme.systemhb.net/template/uploads/images/funcao/logo/eec244065cf20e5456d5af87cea314d7.gif', desc: 'Gestão de comunicação e publicidade institucional.' },
         { id: 'corpo-oficiais-gerais', title: 'Corpo de Oficiais Gerais', icon: '⭐', desc: 'Conselho dos oficiais mais graduados do DME.' },
-        { id: 'centro-rh', title: 'Centro de Recursos Humanos', icon: '👥', desc: 'Gerencia admissões, desligamentos e bem-estar dos militares.' },
-        { id: 'corpo-oficiais', title: 'Corpo de Oficiais', icon: '🗡️', desc: 'Setor de Inteligência e liderança intermediária.' },
-        { id: 'portadores-direitos', title: 'Portadores de Direitos', icon: '🤝', desc: 'Proteção e direitos dos militares do DME.' },
-        { id: 'comando-feminino', title: 'Comando Feminino', icon: '♀️', desc: 'Liderança e representação feminina no DME.' },
-        { id: 'ministerio-publico', title: 'Ministério Público', icon: '⚖️', desc: 'Fiscalização da legalidade das ações internas.' },
-        { id: 'corregedoria', title: 'Corregedoria', icon: '🦅', desc: 'Investigações e processos disciplinares.' },
-        { id: 'abi', title: 'Agência Brasileira de Inteligência', icon: '🦅', desc: 'Coleta e análise de inteligência interna.' },
-        { id: 'goe', title: 'Grupamento de Operações Especiais', icon: '💀', desc: 'Unidade especializada em operações de alto risco.' },
-        { id: 'instrucao-inicial', title: 'Aplicar Instrução Inicial', icon: '📖', desc: 'Aplicação da instrução inicial para novos recrutas.' },
-        { id: 'af-dragonas', title: '[AF] Postagem de Dragonas', icon: '🎖️', desc: 'Gestão de postagens e dragonas no AF.' },
-        { id: 'guerra-selva', title: 'Centro de Instrução Guerra na Selva', icon: '🐆', desc: 'Especialização em operações de selva e ambiente hostil.' },
-        { id: 'cadetes', title: 'Cadetes', icon: '🪖', desc: 'Formação e acompanhamento dos cadetes do DME.' },
-        { id: 'normas-desligamentos', title: 'Centro de Normas e Desligamentos', icon: '📄', desc: 'Processamento de normas internas e desligamentos.' },
-        { id: 'agencia-eventos', title: 'Agência de Eventos', icon: '📅', desc: 'Coordenação e organização de eventos do DME.' },
-        { id: 'stm', title: 'Superior Tribunal Militar', icon: '⚔️', desc: 'Julgamento e deliberação nos processos militares.' },
+        { id: 'centro-rh', title: 'Centro de Recursos Humanos', icon: 'https://dme.systemhb.net/template/uploads/images/funcao/logo/ddfe838106828917d067c863e0f26971.gif', desc: 'Gerencia admissões, desligamentos e bem-estar dos militares.' },
+        { id: 'corpo-oficiais', title: 'Corpo de Oficiais', icon: 'https://dme.systemhb.net/template/uploads/images/funcao/logo/1d4f2a2e5aca8eabc7f2af853ed44772.gif', desc: 'Setor de Inteligência e liderança intermediária.' },
+        { id: 'portadores-direitos', title: 'Portadores de Direitos', icon: 'https://www.habbo.com.br/habbo-imaging/badge/b09114s36044s43014s39114877cc564318702d741883b056ebfd9e8.gif', desc: 'Proteção e direitos dos militares do DME.' },
+        { id: 'comando-feminino', title: 'Comando Feminino', icon: 'https://dme.systemhb.net/template/uploads/images/funcao/logo/76014a0a9c1042e63ad0408ae12f55cf.gif', desc: 'Liderança e representação feminina no DME.' },
+        { id: 'ministerio-publico', title: 'Ministério Público', icon: 'https://dme.systemhb.net/template/uploads/images/funcao/logo/245e8ae6cf5247f17dde055360092d85.gif', desc: 'Fiscalização da legalidade das ações internas.' },
+        { id: 'corregedoria', title: 'Corregedoria', icon: 'https://dme.systemhb.net/template/uploads/images/funcao/logo/cc4349be1fff875b8b228fd1f7db0563.gif', desc: 'Investigações e processos disciplinares.' },
+        { id: 'abi', title: 'Agência Brasileira de Inteligência', icon: 'https://dme.systemhb.net/template/uploads/images/funcao/logo/598213fbfb9e3f0f791096139b758bfc.gif', desc: 'Coleta e análise de inteligência interna.' },
+        { id: 'goe', title: 'Grupamento de Operações Especiais', icon: 'https://dme.systemhb.net/template/uploads/images/funcao/logo/f7967dd54a1e116af97792bc4debd02a.gif', desc: 'Unidade especializada em operações de alto risco.' },
+        { id: 'instrucao-inicial', title: 'Aplicar Instrução Inicial', icon: 'https://dme.systemhb.net/template/uploads/images/funcao/logo/4a7d41ffdd34910a055aa7bfd6a70860.gif', desc: 'Aplicação da instrução inicial para novos recrutas.' },
+        { id: 'af-dragonas', title: '[AF] Postagem de Dragonas', icon: 'https://dme.systemhb.net/template/uploads/images/funcao/logo/e93a950bf1e7915d0468db0f83612f8c.gif', desc: 'Gestão de postagens e dragonas no AF.' },
+        { id: 'guerra-selva', title: 'Centro de Instrução Guerra na Selva', icon: 'https://dme.systemhb.net/template/uploads/images/funcao/logo/180f8013216b09a65bbafae73c9f12b0.gif', desc: 'Especialização em operações de selva e ambiente hostil.' },
+        { id: 'cadetes', title: 'Cadetes', icon: 'https://www.habbo.com.br/habbo-imaging/badge/b10194s36014s43014s19114afed5dd516965c942bfef238012dfec3.gif', desc: 'Formação e acompanhamento dos cadetes do DME.' },
+        { id: 'normas-desligamentos', title: 'Centro de Normas e Desligamentos', icon: 'https://dme.systemhb.net/template/uploads/images/funcao/logo/ca58304020ab7d88aa86b9d885332d86.gif', desc: 'Processamento de normas internas e desligamentos.' },
+        { id: 'agencia-eventos', title: 'Agência de Eventos', icon: 'https://dme.systemhb.net/template/uploads/images/funcao/logo/7b9236b1e8038601f030c34e788d389f.gif', desc: 'Coordenação e organização de eventos do DME.' },
+        { id: 'stm', title: 'Superior Tribunal Militar', icon: 'https://dme.systemhb.net/template/uploads/images/funcao/logo/268e5cc580db6b8ba1a0c7a0eec4db1e.gif', desc: 'Julgamento e deliberação nos processos militares.' },
     ];
 
     // ── Helpers de localStorage ─────────────────────────
@@ -124,8 +124,26 @@
     document.title = `DME — ${orgao.title}`;
     const tC = qs('#centroTitle'); if (tC) tC.textContent = orgao.title;
     const tS = qs('#centroSub'); if (tS) tS.textContent = orgao.sub || orgao.desc || '';
-    const cI = qs('#centroIcon'); if (cI) cI.textContent = orgao.icon;
-    const iI = qs('#inicioIcon'); if (iI) iI.textContent = orgao.icon;
+    /*const cI = qs('#centroIcon'); if (cI) cI.textContent = orgao.icon;
+    const iI = qs('#inicioIcon'); if (iI) iI.textContent = orgao.icon;*/
+    // Ícones como imagem .gif
+const cI = qs('#centroIcon'); 
+if (cI) {
+  if (cI.tagName.toLowerCase() === 'img') {
+    cI.src = orgao.icon; // orgao.icon deve ser o caminho da sua .gif
+  } else {
+    cI.innerHTML = `<img src="${orgao.icon}" alt="${orgao.title}" style="max-width:100%;height:auto;">`;
+  }
+}
+
+const iI = qs('#inicioIcon'); 
+if (iI) {
+  if (iI.tagName.toLowerCase() === 'img') {
+    iI.src = orgao.icon;
+  } else {
+    iI.innerHTML = `<img src="${orgao.icon}" alt="${orgao.title}" style="max-width:100%;height:auto;">`;
+  }
+}
     const iT = qs('#inicioTitle'); if (iT) iT.textContent = orgao.title;
     const iD = qs('#inicioDesc'); if (iD) iD.textContent = orgao.desc || 'Centro do DME System.';
     const bC = qs('#breadcrumbCurrent'); if (bC) bC.textContent = orgao.title;

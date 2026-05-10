@@ -54,55 +54,101 @@
     /* ── Fallback estático ── */
     const _FALLBACK_CATEGORIAS = [
         { slug: 'centros-operacionais', nome: 'Centros Operacionais', icone: '🛡️', orgaos: [
-            { nick: 'centro-instrucao',   nome_oficial: 'Centro de Instrução',                icone: '🛡️', sub: '' },
-            { nick: 'centro-treinamento', nome_oficial: 'Centro de Treinamento',               icone: '🛡️', sub: '' },
-            { nick: 'centro-supervisao',  nome_oficial: 'Centro de Supervisão',                icone: '🛡️', sub: '' },
-            { nick: 'centro-patrulha',    nome_oficial: 'Centro de Patrulha',                  icone: '🛡️', sub: '' },
-            { nick: 'guerra-selva',       nome_oficial: 'Centro de Instrução Guerra na Selva', icone: '🐆', sub: '' },
+            { nick: 'centro-instrucao',   nome_oficial: 'Centro de Instrução',                icone: 'https://dme.systemhb.net/template/uploads/images/funcao/logo/914016940fb6c52e135e9f446ba8aaf8.gif', sub: '' },
+            { nick: 'centro-treinamento', nome_oficial: 'Centro de Treinamento',               icone: 'https://dme.systemhb.net/template/uploads/images/funcao/logo/bbef8297aa5a9abcd7953cae6a9cfdd7.gif', sub: '' },
+            { nick: 'centro-supervisao',  nome_oficial: 'Centro de Supervisão',                icone: 'https://dme.systemhb.net/template/uploads/images/funcao/logo/2f1401dec91ad95dfe3001d54ffe569d.gif', sub: '' },
+            { nick: 'centro-patrulha',    nome_oficial: 'Centro de Patrulha',                  icone: 'https://dme.systemhb.net/template/uploads/images/funcao/logo/0f0070fc35e6287165dbca41c7f346c6.gif', sub: '' },
+            { nick: 'guerra-selva',       nome_oficial: 'Centro de Instrução Guerra na Selva', icone: 'https://dme.systemhb.net/template/uploads/images/funcao/logo/180f8013216b09a65bbafae73c9f12b0.gif', sub: '' },
         ]},
         { slug: 'academias-militares', nome: 'Academias Militares', icone: '🦅', orgaos: [
-            { nick: 'academia-agulhas-negras', nome_oficial: 'Academia Militar das Agulhas Negras', icone: '🦅', sub: '' },
-            { nick: 'academia-publicitaria',   nome_oficial: 'Academia Publicitária Militar',        icone: '📜', sub: '' },
-            { nick: 'instrucao-inicial',        nome_oficial: 'Aplicar Instrução Inicial',            icone: '📖', sub: 'Instrutores' },
-            { nick: 'cadetes',                  nome_oficial: 'Cadetes',                              icone: '🪖', sub: '' },
+            { nick: 'academia-agulhas-negras', nome_oficial: 'Academia Militar das Agulhas Negras', icone: 'https://dme.systemhb.net/template/uploads/images/funcao/logo/77bc72a49309801dfcf55518220ae70c.gif', sub: '' },
+            { nick: 'academia-publicitaria',   nome_oficial: 'Academia Publicitária Militar',        icone: 'https://dme.systemhb.net/template/uploads/images/funcao/logo/eec244065cf20e5456d5af87cea314d7.gif', sub: '' },
+            { nick: 'instrucao-inicial',        nome_oficial: 'Aplicar Instrução Inicial',            icone: 'https://dme.systemhb.net/template/uploads/images/funcao/logo/4a7d41ffdd34910a055aa7bfd6a70860.gif', sub: 'Instrutores' },
+            { nick: 'cadetes',                  nome_oficial: 'Cadetes',                              icone: 'https://www.habbo.com.br/habbo-imaging/badge/b10194s36014s43014s19114afed5dd516965c942bfef238012dfec3.gif', sub: '' },
         ]},
         { slug: 'justica-fiscalizacao', nome: 'Justiça & Fiscalização', icone: '⚖️', orgaos: [
-            { nick: 'auditoria-fiscal',    nome_oficial: 'Auditoria Fiscal',          icone: '⚖️', sub: '' },
-            { nick: 'ministerio-publico',  nome_oficial: 'Ministério Público',         icone: '⚖️', sub: '' },
-            { nick: 'corregedoria',        nome_oficial: 'Corregedoria',              icone: '🦅', sub: '' },
-            { nick: 'stm',                 nome_oficial: 'Superior Tribunal Militar', icone: '⚔️', sub: '' },
+            { nick: 'auditoria-fiscal',    nome_oficial: 'Auditoria Fiscal',          icone: 'https://dme.systemhb.net/template/uploads/images/funcao/logo/31e84ea0b11c5ed7b63ac1e6166bee90.gif', sub: '' },
+            { nick: 'ministerio-publico',  nome_oficial: 'Ministério Público',         icone: 'https://www.habbo.com.br/habbo-imaging/badge/b06124s36114s41014s17013s170158665a8b59b24d62a77d191db749be846.gif', sub: '' },
+            { nick: 'corregedoria',        nome_oficial: 'Corregedoria',              icone: 'https://dme.systemhb.net/template/uploads/images/funcao/logo/cc4349be1fff875b8b228fd1f7db0563.gif', sub: '' },
+            { nick: 'stm',                 nome_oficial: 'Superior Tribunal Militar', icone: 'https://dme.systemhb.net/template/uploads/images/funcao/logo/268e5cc580db6b8ba1a0c7a0eec4db1e.gif', sub: '' },
         ]},
         { slug: 'corpos-inteligencia', nome: 'Corpos & Inteligência', icone: '🗡️', orgaos: [
-            { nick: 'corpo-oficiais-gerais', nome_oficial: 'Corpo de Oficiais Generais',          icone: '⭐', sub: '' },
-            { nick: 'corpo-oficiais',        nome_oficial: 'Corpo de Oficiais',                   icone: '🗡️', sub: 'Setor de Inteligência' },
-            { nick: 'abi',                   nome_oficial: 'Agência Brasileira de Inteligência',  icone: '🦅', sub: '' },
-            { nick: 'goe',                   nome_oficial: 'Grupamento de Operações Especiais',   icone: '💀', sub: 'Instrutores' },
+            { nick: 'corpo-oficiais-gerais', nome_oficial: 'Corpo de Oficiais Generais',          icone: 'https://dme.systemhb.net/template/uploads/images/funcao/logo/7c694a9b1b9a4f9b08c7bc84e57afa50.gif', sub: '' },
+            { nick: 'corpo-oficiais',        nome_oficial: 'Corpo de Oficiais',                   icone: 'https://dme.systemhb.net/template/uploads/images/funcao/logo/1d4f2a2e5aca8eabc7f2af853ed44772.gif', sub: 'Setor de Inteligência' },
+            { nick: 'abi',                   nome_oficial: 'Agência Brasileira de Inteligência',  icone: 'https://dme.systemhb.net/template/uploads/images/funcao/logo/598213fbfb9e3f0f791096139b758bfc.gif', sub: '' },
+            { nick: 'goe',                   nome_oficial: 'Grupamento de Operações Especiais',   icone: 'https://dme.systemhb.net/template/uploads/images/funcao/logo/f7967dd54a1e116af97792bc4debd02a.gif', sub: 'Instrutores' },
         ]},
         { slug: 'orgaos-sociais-rh', nome: 'Órgãos Sociais & RH', icone: '👥', orgaos: [
-            { nick: 'centro-rh',           nome_oficial: 'Centro de Recursos Humanos', icone: '👥', sub: '' },
-            { nick: 'portadores-direitos', nome_oficial: 'Portadores de Direitos',      icone: '🤝', sub: '' },
-            { nick: 'comando-feminino',    nome_oficial: 'Comando Feminino',            icone: '♀️', sub: '' },
+            { nick: 'centro-rh',           nome_oficial: 'Centro de Recursos Humanos', icone: 'https://dme.systemhb.net/template/uploads/images/funcao/logo/ddfe838106828917d067c863e0f26971.gif', sub: '' },
+            { nick: 'portadores-direitos', nome_oficial: 'Portadores de Direitos',      icone: 'https://www.habbo.com.br/habbo-imaging/badge/b09114s36044s43014s39114877cc564318702d741883b056ebfd9e8.gif', sub: '' },
+            { nick: 'comando-feminino',    nome_oficial: 'Comando Feminino',            icone: 'https://dme.systemhb.net/template/uploads/images/funcao/logo/76014a0a9c1042e63ad0408ae12f55cf.gif', sub: '' },
         ]},
     ];
 
+    /* ── Render Img Orgãos ── */
+    function getIcon(o) {
+    const icon = o.icone || o.icon;
+
+    if (!icon) return '🏛️';
+
+    // Se for URL
+    if (
+        icon.startsWith('http://') ||
+        icon.startsWith('https://') ||
+        icon.startsWith('/')
+    ) {
+        return '<img src="' + icon + '" class="funcao-item-img" alt="">';
+    }
+
+    // Emoji fallback
+    return icon;
+
+    }
     /* ── Render ── */
     const ARROW_SVG = '<svg class="funcao-item-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>';
 
     function getTitle(o) { return o.nome_oficial || o.title || ''; }
     function getNick(o)  { return o.nick || o.id || ''; }
-    function getIcon(o)  { return o.icone || o.icon || '🏛️'; }
+    
     function getSub(o)   { return o.sub || ''; }
 
     function cardHTML(o, selectedNick) {
-        const nick = getNick(o);
-        const isSelected = selectedNick === nick;
-        const sub  = getSub(o) ? '<div class="funcao-item-sub">' + getSub(o) + '</div>' : '';
-        const badge = '<span class="funcao-item-badge">Ativo</span>';
-        return '<div class="funcao-item' + (isSelected ? ' selected' : '') + '" data-id="' + nick + '" role="button" tabindex="0" aria-label="' + getTitle(o) + '">' +
-            '<div class="funcao-item-icon">' + getIcon(o) + '</div>' +
-            '<div class="funcao-item-text"><div class="funcao-item-title">' + getTitle(o) + '</div>' + sub + '</div>' +
-            (isSelected ? badge : ARROW_SVG) +
-        '</div>';
+    const nick = getNick(o);
+    const isSelected = selectedNick === nick;
+    const sub  = getSub(o)
+        ? '<div class="funcao-item-sub">' + getSub(o) + '</div>'
+        : '';
+
+    const badge = '<span class="funcao-item-badge">Ativo</span>';
+
+    const icon = o.icone || o.icon || '🏛️';
+
+    const iconHTML =
+        icon.startsWith('http://') ||
+        icon.startsWith('https://') ||
+        icon.startsWith('/')
+            ? '<img class="funcao-item-img" src="' + icon + '" alt="">'
+            : icon;
+
+    return `
+        <div class="funcao-item ${isSelected ? 'selected' : ''}"
+            data-id="${nick}"
+            role="button"
+            tabindex="0"
+            aria-label="${getTitle(o)}">
+
+            <div class="funcao-item-icon">
+                ${iconHTML}
+            </div>
+
+            <div class="funcao-item-text">
+                <div class="funcao-item-title">${getTitle(o)}</div>
+                ${sub}
+            </div>
+
+            ${isSelected ? badge : ARROW_SVG}
+        </div>
+    `;
     }
 
     function renderList(filtro) {
@@ -234,6 +280,29 @@
     /* ── Init ── */
     document.addEventListener('DOMContentLoaded', async function() {
 
+        const orgao = JSON.parse(localStorage.getItem('dme_orgao_selecionado') || 'null');
+
+if (orgao) {
+
+    const imagem =
+        orgao.icone ||
+        orgao.icon ||
+        orgao.imagem_url ||
+        '';
+
+    console.log('Imagem:', imagem);
+
+    const inicioIcon = document.getElementById('inicioIcon');
+    if (inicioIcon) {
+        inicioIcon.src = imagem;
+    }
+
+    const centroIcon = document.getElementById('centroIcon');
+    if (centroIcon) {
+        centroIcon.src = imagem;
+    }
+}
+
         try {
             const me = await apiFetch('/api/auth/me');
             const username = me.nick || me.sub || '';
@@ -261,9 +330,23 @@
             return;
         }
 
+        /*const selected = getOrgaoSelecionado();
+        const statSel = document.getElementById('statSelecionado');
+        if (statSel) statSel.textContent = (selected && (selected.icone || selected.icon)) ? (selected.icone || selected.icon) : '—';*/
+
         const selected = getOrgaoSelecionado();
         const statSel = document.getElementById('statSelecionado');
-        if (statSel) statSel.textContent = (selected && (selected.icone || selected.icon)) ? (selected.icone || selected.icon) : '—';
+
+        if (statSel) {
+        const icone = selected && (selected.icone || selected.icon);
+
+        // Se for uma URL (começa com http ou termina em .png/.gif/.jpg), mostra apenas "—"
+        if (icone && !/^https?:\/\//.test(icone) && !/\.(png|jpg|jpeg|gif)$/i.test(icone)) {
+            statSel.textContent = icone;
+        } else {
+            statSel.textContent = '—';
+        }
+        }
 
         await carregarDados();
 
