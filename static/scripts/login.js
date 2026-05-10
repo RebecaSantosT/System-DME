@@ -182,13 +182,16 @@ if (DOM.registerForm) {
         }
 
         try {
-            await apiCall("/api/auth/register", {
+            const res = await apiCall("/api/auth/register", {
                 nick: appState.formData.username.trim(),
                 email: appState.formData.email.trim(),
                 password: appState.formData.password,
             });
 
-            toast("Cadastro realizado! Aguarde aprovacao de um administrador.", "ok");
+            // Salva o nick para a página de verificação
+            try { localStorage.setItem("dme_username", appState.formData.username.trim()); } catch(_) {}
+
+            toast(res.message || "Cadastro realizado!", "ok");
             setTimeout(() => {
                 window.location.href = "/verificacao";
             }, 1500);
@@ -238,6 +241,17 @@ if (DOM.loginForm) {
             window.location.href = "/home";
         } catch (err) {
             console.error("Erro no login:", err);
+
+            // Se o erro indicar que a missão não foi verificada, redireciona
+            if (err.message && err.message.includes("verificou sua missão")) {
+                toast("Redirecionando para verificação de missão...", "info");
+                try { localStorage.setItem("dme_username", username); } catch(_) {}
+                setTimeout(() => {
+                    window.location.href = "/verificacao";
+                }, 1500);
+                return;
+            }
+
             toast(err.message || "Erro ao conectar ao servidor.", "err");
         } finally {
             if (DOM.loginBtn) {
@@ -254,6 +268,15 @@ document.addEventListener("DOMContentLoaded", () => {
     if (savedTheme === "light") {
         document.documentElement.classList.add("light-mode");
     }
-    // Avatares: animação de entrada feita via CSS (animation-delay por nth-child)
-    // Hover wave/idle também é puramente CSS — sem JS necessário
+
+    const avatars = document.querySelectorAll(".avatar-slot");
+    avatars.forEach((avatar, index) => {
+        avatar.style.opacity = "0";
+        avatar.style.transform = "translateY(10px)";
+        setTimeout(() => {
+            avatar.style.transition = "all 0.5s ease";
+            avatar.style.opacity = "1";
+            avatar.style.transform = "translateY(0)";
+        }, 300 + (index * 120));
+    });
 });
